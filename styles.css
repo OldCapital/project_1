@@ -1,0 +1,273 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: #222;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  opacity: 0.7;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all 2s;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: url('my_images/newyork.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  border: solid 4px #222; 
+}
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 55%;
+  border: 1px solid white;
+  transition: all 0.8s;
+}
+
+.pics {
+  margin-top: 30px;
+  width: 260px;
+  height: 180px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3%;
+  border: 3px solid #222 ;
+  transition: all 0.9s;
+}
+
+.pics:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: all 2s;
+}
+
+.unique {
+	color: #222;
+}
+
+.frame {
+  padding: 25px;
+  background: #fff;  
+  transition: all 2s;
+  
+}
+
+.frame:hover {
+ background-color: black;
+ transition: all 6s;
+}
+
+.email {
+  margin: 50px auto;
+  color: white;
+}
+
+.email:hover {
+ color: #222;
+ transition: all 6s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.tag_name, .tag_location {
+  background-color: #222;
+  color: yellow;
+  padding: 5px;
+  border-radius: 10px;
+  display: table;
+  margin: 10px auto;
+  opacity: 0.7
+} 
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 600px;
+  text-align: left;
+  background: #fff;
+  color: #293E45;
+  border-bottom: 4px solid white;
+  border-radius: 6px;
+  transition: all 1.5s;
+}
+
+.desert {
+  border: solid 2px #222 ;
+}
+
+.card:hover {
+  border-color: #222;
+  transition: all 3s;
+}
+
+ul.skills, ul.interests {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #293E45;
+  color: yellow;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.interests li {
+  border-radius: 6px;
+  background: #293E45;
+  color: yellow;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.skills li:nth-child(odd) {
+  background: yellow;
+  color: #222;
+  opacity: 0.7;
+}
+
+.interests li:nth-child(odd) {
+  background: yellow;
+  color: #222;
+  opacity: 0.7;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all 1s;
+}
+
+a.github {
+  background-image: url(my_images/github.svg);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
